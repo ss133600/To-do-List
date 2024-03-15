@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'YClover';
+  font-style: normal;
+  font-weight: Bold;
+  src: url('./YClover-Bold.otf') format('woff');
+}
+@font-face {
+  font-family: 'YClover';
+  font-style: normal;
+  font-weight: Regular;
+  src: url('./YClover-Regular.otf') format('woff');
+}
