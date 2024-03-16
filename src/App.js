@@ -11,20 +11,20 @@ const mockTodo = [
   {
     id: 0,
     isDone: false,
-    content: '네이버 자소서',
-    createdTime: '오전 10:00',
+    content: '운동하기',
+    createdTime: 'AM 10:00',
   },
   {
     id: 1,
     isDone: false,
     content: '코테 공부하기',
-    createdTime: '오전 11:00',
+    createdTime: 'AM 11:00',
   },
   {
     id: 2,
     isDone: false,
-    content: 'todolist시간기능 구현',
-    createdTime: '오전 12:00',
+    content: '점심먹기',
+    createdTime: 'AM 12:00',
   },
 ];
 
@@ -101,7 +101,7 @@ function App() {
   const getCurrentTime = () => {
     const now = new Date();
     const hours = now.getHours();
-    const ampm = hours >= 12 ? '오후' : '오전';
+    const ampm = hours >= 12 ? 'PM' : 'AM';
     const formattedHours = hours % 12 || 12;
     const minutes = now.getMinutes().toString().padStart(2, '0');
     return `${ampm} ${formattedHours}:${minutes}`;

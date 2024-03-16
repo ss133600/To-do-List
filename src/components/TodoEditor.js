@@ -67,7 +67,7 @@ const TodoEditor = ({ onCreate }) => {
       <EditWrapper>
         <input
           type="text"
-          placeholder="새로운 Todo 작성하기 ✏️"
+          placeholder="새로운 Todo 작성하기 ✍"
           value={content}
           onChange={onChangeContent}
           ref={inputRef}

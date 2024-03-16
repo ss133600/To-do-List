@@ -4,8 +4,8 @@ import { CustomDate } from './CustomDate';
 const H2 = styled.p`
   /* margin-left: 15px; */
   margin-top: 20px;
-  color: #333;
-  font-size: 37px;
+  color: #222;
+  font-size: 36px;
   font-family: 'YClover';
   font-weight: Bold;
 `;

@@ -27,30 +27,31 @@ const Checkbox = styled.div`
   input[type='checkbox']:checked {
     background-color: #fc6736;
     border-color: #fc6736;
+    color: white;
   }
 
   input[type='checkbox']:checked::after {
-    content: '✔';
+    content: '✓';
     display: block;
     text-align: center;
     color: white;
     font-size: 17px;
-    font-weight: regular;
+    font-weight: 600;
     align-items: center;
   }
 `;
 const Title = styled.div`
   flex: 1;
   /* 부모의 너비가 해당 아이템보다 작아지면 부모의 너비에 맞추어 줄어든다. */
-  color: ${(props) => (props.isChecked ? '#aaaaaa		' : '222')};
+  color: ${(props) => (props.isChecked ? '#828282' : '#222')};
   text-decoration: ${(props) => (props.isChecked ? 'line-through' : 'none')};
-  text-decoration-color: #888;
+  text-decoration-color: #ff7800;
   cursor: pointer;
-  font-size: 18px;
-  color: #222;
+  font-size: 20px;
+  transition: color 0.2s;
 `;
 const ToDate = styled.div`
-  font-size: 12px;
+  font-size: 13px;
   color: gray;
 `;
 const RemoveBtn = styled.button`
@@ -58,17 +59,16 @@ const RemoveBtn = styled.button`
   color: #777;
   font-size: 13px;
   font-weight: 500;
-  border: 1px solid #999; /* 테두리 스타일을 설정합니다. */
+  border: 1px solid #999; 
   border-radius: 5px;
-  padding: 5px 10px; /* 안쪽 여백을 설정합니다. */
-  background-color: transparent; /* 배경색을 투명으로 설정합니다. */
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* 전환 효과를 추가합니다. */
+  padding: 5px 10px; 
+  background-color: transparent;
+  transition: background-color 0.2s, color 0.3s, border-color 0.3s; /* 전환 효과를 추가합니다. */
 
   &:hover {
     color: #fff;
-    background-color: #fc6736; /* 호버 시 배경색을 변경합니다. */
-    border-color: #fc6736; /* 호버 시 테두리 색상을 변경합니다. */
-  }
+    background-color: #fc6736;
+    border-color: #fc6736; 
 `;
 
 const TodoItem = ({ id, content, isDone, onUpdate, onDelete, createdTime }) => {

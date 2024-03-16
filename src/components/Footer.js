@@ -6,7 +6,7 @@ const Container = styled.footer`
   justify-content: center;
   align-items: center;
   font-size: 11px;
-  font-family: none;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 `;
