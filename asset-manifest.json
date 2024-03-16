@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.7183b843.css",
-    "main.js": "/static/js/main.119f0bc1.js",
-    "static/media/GamjaFlower-Regular.otf": "/static/media/GamjaFlower-Regular.317f969e43bbf7cb06a0.otf",
-    "static/media/omyu pretty.otf": "/static/media/omyu pretty.a709da7b5fd009ebd794.otf",
-    "static/media/YClover-Bold.otf": "/static/media/YClover-Bold.24fe24eb31c1ef840328.otf",
-    "static/media/YClover-Regular.otf": "/static/media/YClover-Regular.7bb92857e1845467da44.otf",
-    "index.html": "/index.html",
-    "main.7183b843.css.map": "/static/css/main.7183b843.css.map",
-    "main.119f0bc1.js.map": "/static/js/main.119f0bc1.js.map"
+    "main.css": "/ss133600/To-do-List/static/css/main.45be5cdd.css",
+    "main.js": "/ss133600/To-do-List/static/js/main.1ed64799.js",
+    "static/media/GamjaFlower-Regular.otf": "/ss133600/To-do-List/static/media/GamjaFlower-Regular.317f969e43bbf7cb06a0.otf",
+    "static/media/omyu pretty.otf": "/ss133600/To-do-List/static/media/omyu pretty.a709da7b5fd009ebd794.otf",
+    "static/media/YClover-Bold.otf": "/ss133600/To-do-List/static/media/YClover-Bold.24fe24eb31c1ef840328.otf",
+    "static/media/YClover-Regular.otf": "/ss133600/To-do-List/static/media/YClover-Regular.7bb92857e1845467da44.otf",
+    "index.html": "/ss133600/To-do-List/index.html",
+    "main.45be5cdd.css.map": "/ss133600/To-do-List/static/css/main.45be5cdd.css.map",
+    "main.1ed64799.js.map": "/ss133600/To-do-List/static/js/main.1ed64799.js.map"
   },
   "entrypoints": [
-    "static/css/main.7183b843.css",
-    "static/js/main.119f0bc1.js"
+    "static/css/main.45be5cdd.css",
+    "static/js/main.1ed64799.js"
   ]
 }
