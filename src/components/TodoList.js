@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import TodoItem from './TodoItem';
 
 const SearchBar = styled.input`
   margin-top: 10px;
@@ -16,10 +17,21 @@ const SearchBar = styled.input`
   }
 `;
 
+const ListWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
 const TodoList = () => {
   return (
     <>
       <SearchBar type="text" placeholder="검색어를 입력하세요"></SearchBar>
+      <ListWrapper>
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+      </ListWrapper>
     </>
   );
 };
