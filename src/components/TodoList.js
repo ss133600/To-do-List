@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import TodoItem from './TodoItem';
+import { useState } from 'react';
 
 const SearchBar = styled.input`
   margin-top: 10px;
@@ -23,14 +24,35 @@ const ListWrapper = styled.div`
   gap: 20px;
 `;
 
-const TodoList = () => {
+const TodoList = ({ todo }) => {
+  const [search, setSearch] = useState('');
+
+  //감지를 위한 값
+  const onChangeSearch = (e) => {
+    setSearch(e.target.value);
+  };
+
+  //필터링 되는 값
+  const getSearchResult = () => {
+    return search === ''
+      ? todo
+      : todo.filter((it) =>
+          it.content.toLowerCase().includes(search.toLowerCase()),
+        );
+    //toLowerCase은 대소문자 구별 없이 쓸 수 있음
+  };
+
   return (
     <>
-      <SearchBar type="text" placeholder="검색어를 입력하세요"></SearchBar>
+      <SearchBar
+        type="text"
+        placeholder="검색어를 입력하세요"
+        onChange={onChangeSearch}
+      ></SearchBar>
       <ListWrapper>
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
+        {getSearchResult().map((it) => (
+          <TodoItem key={it.id} {...it} />
+        ))}
       </ListWrapper>
     </>
   );

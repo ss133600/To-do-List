@@ -30,13 +30,13 @@ const RemoveBtn = styled.button`
   padding: 5px;
 `;
 
-const TodoItem = () => {
+const TodoItem = ({ id, content, isDone, createdClock }) => {
   return (
     <TodoItemWrapper>
       <Checkbox>
         <input type="checkbox" />
       </Checkbox>
-      <Title>할 일</Title>
+      <Title>{content}</Title>
       <ToDate>
         <Clock />
       </ToDate>

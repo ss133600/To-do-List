@@ -11,19 +11,16 @@ const mockTodo = [
     id: 0,
     isDone: false,
     content: '네이버 자소서쓰기',
-    createdClock: new Date().getTime(),
   },
   {
     id: 1,
     isDone: false,
     content: '코테 공부하기',
-    createdClock: new Date().getTime(),
   },
   {
     id: 2,
     isDone: false,
     content: 'todolist 시간함수 코딩',
-    createdClock: new Date().getTime(),
   },
 ];
 
@@ -58,7 +55,7 @@ function App() {
     <Wrapper>
       <Header />
       <TodoEditor onCreate={onCreate} />
-      <TodoList />
+      <TodoList todo={todo} />
     </Wrapper>
   );
 }
