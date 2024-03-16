@@ -51,11 +51,32 @@ function App() {
     idRef.current += 1;
   };
 
+  // 할 일 수정을 위한 함수
+  const onUpdate = (targetId) => {
+    setTodo(
+      todo.map((it) => {
+        if (it.id === targetId) {
+          return {
+            ...it,
+            isDone: !it.isDone,
+          };
+        } else {
+          return it;
+        }
+      }),
+    );
+  };
+
+  // 할 일 삭제하는 함수
+  const onDelete = (targetId) => {
+    setTodo(todo.filter((it) => it.id !== targetId));
+  };
+
   return (
     <Wrapper>
       <Header />
       <TodoEditor onCreate={onCreate} />
-      <TodoList todo={todo} />
+      <TodoList todo={todo} onUpdate={onUpdate} onDelete={onDelete} />
     </Wrapper>
   );
 }

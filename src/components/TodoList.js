@@ -24,7 +24,7 @@ const ListWrapper = styled.div`
   gap: 20px;
 `;
 
-const TodoList = ({ todo }) => {
+const TodoList = ({ todo, onUpdate, onDelete }) => {
   const [search, setSearch] = useState('');
 
   //감지를 위한 값
@@ -51,7 +51,12 @@ const TodoList = ({ todo }) => {
       ></SearchBar>
       <ListWrapper>
         {getSearchResult().map((it) => (
-          <TodoItem key={it.id} {...it} />
+          <TodoItem
+            key={it.id}
+            {...it}
+            onUpdate={onUpdate}
+            onDelete={onDelete}
+          />
         ))}
       </ListWrapper>
     </>

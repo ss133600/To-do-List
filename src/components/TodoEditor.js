@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import styled from 'styled-components';
 
 const EditWrapper = styled.div`
-  width: 95%;
+  width: 100%;
   display: flex;
   gap: 5px;
 
@@ -30,6 +30,7 @@ const InsertBtn = styled.button`
   background-color: #fc6736;
   color: white;
   border-radius: 5px;
+  font-weight: 500;
 `;
 
 const TodoEditor = ({ onCreate }) => {

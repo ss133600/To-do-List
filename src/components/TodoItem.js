@@ -30,18 +30,26 @@ const RemoveBtn = styled.button`
   padding: 5px;
 `;
 
-const TodoItem = ({ id, content, isDone, createdClock }) => {
+const TodoItem = ({ id, content, isDone, onUpdate, onDelete }) => {
+  const onChangeCheckBox = () => {
+    onUpdate(id);
+  };
+
+  const onClickDelete = () => {
+    onDelete(id);
+  };
+
   return (
     <TodoItemWrapper>
       <Checkbox>
-        <input type="checkbox" />
+        <input type="checkbox" checked={isDone} onChange={onChangeCheckBox} />
       </Checkbox>
       <Title>{content}</Title>
       <ToDate>
         <Clock />
       </ToDate>
       <div className="btnbox">
-        <RemoveBtn>삭제</RemoveBtn>
+        <RemoveBtn onClick={onClickDelete}>삭제</RemoveBtn>
       </div>
     </TodoItemWrapper>
   );
