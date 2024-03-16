@@ -10,3 +10,15 @@
   font-weight: Regular;
   src: url('./YClover-Regular.otf') format('woff');
 }
+@font-face {
+  font-family: 'GamjaFlower';
+  font-style: normal;
+  font-weight: Regular;
+  src: url('./GamjaFlower-Regular.otf') format('woff');
+}
+@font-face {
+  font-family: 'omyu pretty';
+  font-style: normal;
+  font-weight: Regular;
+  src: url('./omyu\ pretty.otf') format('woff');
+}

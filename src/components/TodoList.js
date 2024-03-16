@@ -24,7 +24,7 @@ const ListWrapper = styled.div`
   gap: 20px;
 `;
 
-const TodoList = ({ todo, onUpdate, onDelete }) => {
+const TodoList = ({ todo, onUpdate, onDelete, getCurrentTime }) => {
   const [search, setSearch] = useState('');
 
   //감지를 위한 값
@@ -56,6 +56,7 @@ const TodoList = ({ todo, onUpdate, onDelete }) => {
             {...it}
             onUpdate={onUpdate}
             onDelete={onDelete}
+            getCurrentTime={getCurrentTime}
           />
         ))}
       </ListWrapper>

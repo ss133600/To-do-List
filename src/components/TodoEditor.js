@@ -49,6 +49,7 @@ const TodoEditor = ({ onCreate }) => {
       inputRef.current.focus();
       return;
     }
+    //새로운 할 일 추가
     onCreate(content);
     //아이템 추가한 후 빈 입력상자 만들기
     setContent('');

@@ -4,9 +4,9 @@ const Dday = styled.div`
   margin-left: 5px;
   margin-top: 25px;
   margin-bottom: -3px;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'YClover';
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'omyu pretty';
   font-weight: Regular;
 `;
 
