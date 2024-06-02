@@ -33,8 +33,7 @@
 ---
 
 ### 👉개발 구조
-![그림1](https://github.com/ss133600/To-do-List/assets/143502502/4477e33d-b015-4c8d-a389-2f0c3cec4fed)
-
+![그림3](https://github.com/ss133600/To-do-List/assets/143502502/c94a2a23-b48a-4795-81c9-d662ff6c636a)
 
 ---
 
